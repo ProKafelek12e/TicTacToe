@@ -1,0 +1,28 @@
+table,td, tr{
+    border: 7px solid black;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td{
+    height: 250px;
+    width: 250px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+td:hover{
+    transition: .5s;
+    background-color: beige;
+}
+
+
+
+
+
+body{
+    background-color: #6D6A75;
+}
