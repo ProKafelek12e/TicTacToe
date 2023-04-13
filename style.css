@@ -15,6 +15,7 @@ body{
     height: 100vh;
     margin: 0px;
     flex-direction: column;
+    font-family: 'Courier New', monospace;
 }
 td{
     font-size: 700%;

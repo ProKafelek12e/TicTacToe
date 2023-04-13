@@ -28,7 +28,7 @@ function znak(id){
     if(intId <3) plansza[0][intId] = symbol
     else if(intId >2 && intId<6) plansza[1][intId%3] = symbol
     else if(intId >5) plansza[2][intId%3] = symbol
-    console.log(plansza)
+    generujPlansze()
 
 
 
@@ -74,5 +74,18 @@ function blokujPlansze(){
     document.getElementById("body").prepend(h1)
     for(let i=1;i<=9;i++){
         document.getElementById(i).removeAttribute("onclick")
+    }
+
+}
+function generujPlansze(){
+    var licznik2 =1
+    for(let i=0;i<=2;i++){
+        for(let j=0;j<=2;j++){
+            console.log(plansza[i][j])
+            if(plansza[i][j]!=undefined){
+            document.getElementById(licznik2.toString()).innerHTML = plansza[i][j]
+            }
+            licznik2++
+        }
     }
 }
